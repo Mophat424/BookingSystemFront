@@ -1,0 +1,249 @@
+/* .about-container {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #f5f7fa;
+}
+
+.about-header {
+  position: relative;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.about-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.about-title {
+  position: relative;
+  z-index: 2;
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.about-description {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.about-section {
+  margin-bottom: 2rem;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  color: #2e7d32;
+  margin-bottom: 1rem;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.about-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.about-list li {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.about-list li::before {
+  content: '✓';
+  color: #4caf50;
+  position: absolute;
+  left: 0;
+}
+
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 2.5rem;
+  }
+  .about-description {
+    font-size: 1rem;
+  }
+  .about-section h2 {
+    font-size: 1.5rem;
+  }
+} */
+
+
+
+
+
+
+
+
+
+
+/* src/pages/AboutPage.css */
+.about-container {
+  font-family: 'Arial', sans-serif;
+  color: white; /* White font color for all text */
+  min-height: 100vh;
+  background-image: url('../assets/images/event2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+  z-index: 1;
+}
+
+.about-content {
+  position: relative;
+  z-index: 2; /* Content above overlay */
+  max-width: 800px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white; /* White font color */
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow for readability */
+}
+
+.about-description {
+  font-size: 1.2rem;
+  color: white; /* White font color */
+  margin-bottom: 20px;
+  line-height: 1.6;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+.about-section {
+  margin-bottom: 2rem;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  color: white; /* White font color */
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  color: white; /* White font color */
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.about-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.about-list li {
+  font-size: 1.1rem;
+  color: white; /* White font color */
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 1.5rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.about-list li::before {
+  content: '✓';
+  color: #90ee90; /* Light green to match Landing page */
+  position: absolute;
+  left: 0;
+}
+
+.testimonials-section {
+  background: transparent; /* Transparent to blend with page background */
+  padding: 2rem;
+}
+
+.testimonials-section .testimonials-title {
+  font-size: 2rem;
+  color: white; /* White font color */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.testimonials-section .testimonial-card {
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent black for cards */
+  border: none; /* Remove border for cleaner look */
+  color: white; /* White text for testimonials */
+}
+
+.testimonials-section .testimonial-content {
+  color: white; /* White text */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.testimonials-section .testimonial-name {
+  color: white; /* White text */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.testimonials-section .testimonial-role {
+  color: #90ee90; /* Light green to match highlights */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 2rem;
+  }
+  .about-description {
+    font-size: 1rem;
+  }
+  .about-section h2 {
+    font-size: 1.5rem;
+  }
+  .about-section p, .about-list li {
+    font-size: 0.9rem;
+  }
+  .testimonials-section {
+    padding: 1rem;
+  }
+  .testimonials-section .testimonials-title {
+    font-size: 1.5rem;
+  }
+}

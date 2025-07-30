@@ -1,0 +1,244 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fa;
+  color: #333;
+}
+
+/* Table Styles */
+.manage-users-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.manage-users-table th,
+.manage-users-table td {
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.manage-users-table thead {
+  background-color: #4a5568;
+  color: #fff;
+}
+
+.manage-users-table th {
+  font-weight: 600;
+}
+
+.manage-users-table tbody tr {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.manage-users-table tbody tr:hover {
+  background-color: #edf2f7;
+  cursor: pointer;
+}
+
+.manage-users-table td {
+  border-right: 1px solid #e2e8f0;
+}
+
+.manage-users-table td:last-child {
+  border-right: none;
+}
+
+.manage-users-table .actions-column {
+  width: 250px;
+  min-width: 200px;
+}
+
+.manage-users-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.manage-users-badge-success {
+  background-color: #48bb78;
+  color: #fff;
+}
+
+.manage-users-badge-warning {
+  background-color: #f6e05e;
+  color: #744210;
+}
+
+/* Button Styles */
+.btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  transition: background-color 0.2s, opacity 0.2s;
+  white-space: nowrap;
+  min-width: 120px;
+}
+
+.btn-primary {
+  background-color: #9B59B6; /* Purple for Change Role */
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #8E44AD; /* Darker purple on hover */
+}
+
+.btn-secondary {
+  background-color: #48bb78; /* Green for Update Profile */
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background-color: #38a169; /* Darker green on hover */
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Modal Styles */
+.manage-users-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.manage-users-modal-box {
+  background-color: #2d3748;
+  color: #fff;
+  padding: 25px; /* Increased padding for better spacing */
+  border-radius: 8px;
+  width: 90%;
+  max-width: 450px; /* Slightly wider for better layout */
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.manage-users-modal-box h3 {
+  font-size: 20px; /* Larger heading */
+  font-weight: 600;
+  margin-bottom: 20px; /* More space below heading */
+  text-align: center; /* Centered title */
+}
+
+.manage-users-modal-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Increased gap between form elements */
+}
+
+.manage-users-modal-box label {
+  font-weight: 500;
+  font-size: 16px; /* Slightly larger label text */
+  margin-bottom: 5px; /* Space below label */
+}
+
+.manage-users-modal-box select,
+.manage-users-modal-box input {
+  padding: 10px; /* Increased input padding */
+  border: 1px solid #4a5568;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+  width: 100%;
+  font-size: 14px;
+}
+
+.manage-users-modal-box select:focus,
+.manage-users-modal-box input:focus {
+  outline: none;
+  border-color: #9B59B6; /* Purple focus ring */
+  box-shadow: 0 0 5px rgba(155, 89, 182, 0.5); /* Matching focus shadow */
+}
+
+.manage-users-modal-box .error-text {
+  color: #e53e3e;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.manage-users-modal-box .modal-action {
+  display: flex;
+  gap: 15px; /* More space between action buttons */
+  justify-content: center; /* Center the buttons */
+}
+
+.manage-users-modal-box .btn {
+  padding: 10px 20px;
+}
+
+/* Input Styles */
+.manage-users-input {
+  padding: 8px;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 14px;
+}
+
+.manage-users-input:focus {
+  outline: none;
+  border-color: #4299e1;
+  box-shadow: 0 0 4px rgba(66, 153, 225, 0.5);
+}
+
+/* Loading and Error States */
+.manage-users-loading,
+.manage-users-error {
+  text-align: center;
+  padding: 16px;
+  font-size: 16px;
+}
+
+.manage-users-error {
+  color: #e53e3e;
+}
+
+/* Responsive Design */
+@media (min-width: 640px) {
+  .manage-users-table th,
+  .manage-users-table td {
+    font-size: 16px;
+    padding: 16px 20px;
+  }
+
+  .manage-users-modal-box {
+    max-width: 500px;
+  }
+
+  .manage-users-modal-box .modal-action {
+    flex-direction: row;
+  }
+
+  .manage-users-modal-box .btn {
+    padding: 10px 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .manage-users-table th,
+  .manage-users-table td {
+    padding: 18px 24px;
+  }
+
+  .manage-users-table .actions-column {
+    width: 300px;
+  }
+}
