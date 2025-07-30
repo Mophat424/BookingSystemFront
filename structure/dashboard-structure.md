@@ -1,15 +1,21 @@
 src/dashboard
 |-- AdminDashboard
+|   |-- AdminDashboard.css
 |   |-- AdminDashboard.tsx
-|   |-- Functions
+|   |-- ManageBookings
+|   |-- ManageEvents
+|   |-- ManagePayments
+|   |-- ManageSupportTickets
+|   |-- ManageUsers
 |   |-- aside
-|   |-- manageUsers
 |   `-- profile.tsx
 `-- UserDashboard
-    |-- UpdateProfile.tsx
+    |-- Bookings
+    |-- Events
+    |-- Profile
+    |-- UserDashboard.css
     |-- UserDashboard.tsx
     |-- UserProfile.tsx
-    |-- aside
-    `-- functions
+    `-- aside
 
-7 directories, 5 files
+12 directories, 6 files
