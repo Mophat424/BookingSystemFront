@@ -7,7 +7,7 @@ import type { RootState } from "./app/store";
 // Pages
 import LandingPage from "./pages/LandingPage";
 import AboutPage from "./pages/AboutPage";
-import Register from "./pages/auth/Register";
+import Register from './pages/auth/Register';
 import VerifyUser from "./pages/auth/VerifyUser";
 import Login from "./pages/auth/Login";
 
